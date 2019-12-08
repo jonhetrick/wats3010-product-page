@@ -1,0 +1,87 @@
+/* Styles for Product Page Customization */
+/* NOTE: Do not edit the Bootstrap CSS files. */
+
+body {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    color: green;
+}
+
+#navbar-default a:hover {
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.checked {
+    color: red;
+}
+
+.hr-color {
+    border-color: #fff;
+}
+
+.container-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul.text-color {
+    color: white;
+}
+
+#Home h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+#Products,
+#Pricing,
+#ReviewsÍ,
+#navbar-default {
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Social Sticky Bar: */
+
+.icon-bar a {
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Footer */
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-item-flex {
+    flex: 0 1 auto;
+}

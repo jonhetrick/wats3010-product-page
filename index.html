@@ -10,152 +10,272 @@
      <meta name="description" content="API Superstore">
      <meta name="author" content="Jon Hetrick">
 
-     <link rel="favicon" href="favicon.ico">
+     <link rel="shortcut icon" type="image/png" href="./assets/favicon/favicon.ico">
 
      <title>API Superstore</title>
 
-     <link rel="stylesheet" href="./main.css">
+     <link rel="stylesheet" href="./css/style.css">
 
      <!-- Bootstrap CSS Framework -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-     <!-- End Bootstrap CSS Framework -->
 
      <!-- FontAwesome (https://fontawesome.com/how-to-use/svg-with-js#basic-use) -->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-     <!-- FontAwesome End  -->
 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Inconsolata&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="bg-dark" data-spy="scroll" data-target="#navbar-default" data-offset=50>
 
-     <!-- TODO - Figure out which Nav I want to use.  -->
-     <!-- Header Start -->
-     <!-- <header id="page-home">
-          <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
-               <div class="container-fluid">
+     <!-- Navigation -->
+     <nav id="navbar-default" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container">
+               <a class="navbar-brand" href="index.html"><i class="fas fa-star"></i>API Superstore</a>
+               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                         <li class="nav-item mr-4">
+                              <a class="nav-link active" href="#Home">Home</a>
+                         </li>
+                         <li class="nav-item mr-4">
+                              <a class="nav-link" href="#Video">Video</a>
+                         </li>
+                         <li class="nav-item mr-4">
+                              <a class="nav-link" href="#Products">Products</a>
+                         </li>
+                         <li class="nav-item mr-4">
+                              <a class="nav-link" href="#Pricing">Pricing</a>
+                         </li>
+                         <li class="nav-item mr-4">
+                              <a class="nav-link" href="#Reviews">Reviews</a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+     <!-- End Navigation -->
 
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
-                         aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
-                         <span class="navbar-toggler-icon"></span>
-                    </button>
+     <div id="Home" class="jumbotron bg-dark text-center text-light">
+          <div class="container">
+               <h1 class="display-3">Welcome, to the best APIs on &#x1f30e; </h1>
+               <hr style="border-top: 5px solid red;">
+          </div>
+     </div>
 
 
-                    <a class="navbar-brand" href="#page-home"> <i class="fas fa-star"></i> API Superstore</a>
+     <!-- Start Intro Content w/ Video -->
+     <div id="Video" class="container">
+          <div class="container-video">
+               <iframe src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen
+                    class="video"></iframe>
+          </div>
+     </div>
+     <!-- End Intro Content w/ Video -->
 
-                    <section class="collapse navbar-collapse" id="myTogglerNav">
-                         <div class="navbar-nav">
-                              <a class="nav-item-link" href="#page-home">home</a>
+     <!-- Start Products Section w/Description of Features -->
+     <div id="Products" class="container py-5">
+          <h1 class="display-4 pricing text-center text-light">Featured Products</h1>
+          <h3 class="text-light">Our APIs:</h3>
+          <ul class="text-color">
+               <li>Fastest APIs on the Market</li>
+               <li>Uncapped number of calls, never feel like you are being throttled.</li>
+               <li>No commitments! Cancel Subscription at any time, with one click.</li>
+               <li>HUGE! Selection of APIs for all your projects needs</li>
+          </ul>
+
+          <div class="row">
+               <div class="col-lg-4 mb-4 text-center">
+                    <div class="card border-0 h-100">
+                         <a href="#">
+                              <img class="card-img-top img-fluid" src="./design/Products/instagram-320-170.png"
+                                   alt="Instagram API Image">
+                         </a>
+                         <div class="card-body">
+                              <h4 class="card-title">
+                                   Instagram API
+                              </h4>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
                          </div>
-                    </section>
+                         <div class="list-group-item list-group-flush">
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-lg-4 mb-4 text-center"">
+                    <div class=" card border-0 h-100">
+                    <a href="#">
+                         <img class="card-img-top img-fluid" src="./design/Products/quotes-api-320-170.png"
+                              alt="Quotes API Image">
+                    </a>
+                    <div class="card-body">
+                         <h4 class="card-title">
+                              Quotes API
+                         </h4>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="list-group-item list-group-flush">
+                         <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+               </div>
+          </div>
+          <div class="col-lg-4 mb-4 text-center"">
+                    <div class=" card border-0 h-100">
+               <a href="#">
+                    <img class="card-img-top img-fluid" src="./design/Products/weather-api-320-170.png"
+                         alt="Weather API Image">
+               </a>
+               <div class="card-body">
+                    <h4 class="card-title">
+                         Weather API
+                    </h4>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
 
                </div>
-          </nav>
-     </header> -->
-     <!-- Header End -->
+               <div class="list-group-item list-group-flush">
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+               </div>
+          </div>
+     </div>
+     </div>
+     </div>
+     <!-- End Product Section -->
 
-
-
-     <header>
-          <!-- Navigation -->
-          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white fixed-top">
-               <div class="container">
-                    <a class="navbar-brand" href="index.html"><i class="fas fa-star"></i>API Superstore</a>
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                         aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                         <ul class="navbar-nav ml-auto">
-                              <li class="nav-item">
-                                   <a class="nav-link" href="">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link" href="">Products</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link" href="">About</a>
+     <!-- Start of Pricing -->
+     <div id="Pricing" class="container py-5 text-center">
+          <h1 class="display-4 pricing text-center text-light">Subscriptions</h1>
+          <div class="row">
+               <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                         <h3 class="card-header">Basic</h3>
+                         <div class="card-body">
+                              <div class="display-4 pricing">Free</div>
+                              <div class="font-italic">First Month $5.00 After that</div>
+                         </div>
+                         <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Access to Any 1 API of your Choice with FULL access and no
+                                   restrictions on call limit.</li>
+                              <li class="list-group-item">
+                                   <a href="#" class="btn btn-primary">Sign Up</a>
                               </li>
                          </ul>
                     </div>
                </div>
-          </nav>
-          <!-- End Navigation -->
-     </header>
-
-     <!-- Page Content -->
-     <div class="container">
-          <h1 class="my-4">Welcome to the API Superstore</h1>
-
-          <h2>Recent Reviews</h2>
-
-          <!-- YouTube Video -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder=".5"
-               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <!-- Features Section -->
-          <div class="row">
-               <div class="col-lg-6">
-                    <h2>THIS IS WHAT YOU NEED TO KNOW!</h2>
-                    <p>................</p>
+               <div class="col-lg-4 mb-4">
+                    <div class="card card-outline-primary h-100">
+                         <h3 class="card-header">Premium</h3>
+                         <div class="card-body">
+                              <div class="display-4 pricing">$20</div>
+                              <div class="font-italic">per month</div>
+                         </div>
+                         <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Access to all Premium APIs with no limits. Support from live
+                                   developers 24/7</li>
+                              <li class="list-group-item">
+                                   <a href="#" class="btn btn-primary">Sign Up</a>
+                              </li>
+                         </ul>
+                    </div>
                </div>
-               <div class="col-lg-6">
-                    <img class="img-fluid rounded" src="" alt="">
-               </div>
-          </div>
-          <!-- /.row -->
-          <hr>
-          <!-- Call to Action Section -->
-          <div class="row mb-4">
-               <div class="col-md-8">
-                    <p>
-                         <strong>In the Works -</strong> SUPERSTORE
-                    </p>
-               </div>
-               <div class="col-md-4">
-                    <a class="btn btn-lg btn-secondary btn-block disabled" href="#">PURCHASE ITEMS</a>
+               <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                         <h3 class="card-header">Pro</h3>
+                         <div class="card-body">
+                              <div class="display-4 pricing">$35</div>
+                              <div class="font-italic">per month</div>
+                         </div>
+                         <ul class="list-group list-group-flush">
+                              <li class="list-group-item">PRO is the all of the Premium features, plus access to our
+                                   special discord, and mystery gifts sent out to our PRO members quarterly.
+                              </li>
+                              <li class="list-group-item">
+                                   <a href="#" class="btn btn-primary">Sign Up</a>
+                              </li>
+                         </ul>
+                    </div>
                </div>
           </div>
      </div>
-     <!-- /.container -->
+     <div id="testimonials"></div>
+     <!-- End of Pricing -->
 
-     <!-- Footer -->
-     <footer class="py-5 bg-light">
-          <div class="container">
-               <div class="footer-flex">
-                    <p class="footer-item-flex text-black-50">Copyright &copy; API Superstore 2020</p>
-                    <p class="footer-item-flex text-black-50">Jon Hetrick</p>
+
+     <!-- Start Reviews -->
+     <div id="Reviews" class="container text-light">
+          <h1 class="display-4 text-center">Recent Reviews</h1>
+
+          <div class="row">
+               <div class="col">
+                    <p><i> ALICE - "Thanks to API Superstore I now have full control over my online business and I never
+                              have any issues having the most up to date data on my website!" </i></p>
+               </div>
+               <div class="col">
+                    <img class="img-fluid rounded-circle" src="./assets/faces/face-3.jpg" alt="persons picture">
                </div>
           </div>
-          <!-- /.container -->
+
+          <!-- Call to Action Section -->
+          <hr style="border-top: 5px solid red;">
+          <div class="row">
+               <div class="col">
+                    <h2> <strong>Join us!</strong></h2>
+               </div>
+               <div class="col">
+                    <a class="btn btn-lg btn-primary text-white btn-block" href="#">Sign up for our Mailing
+                         List!</a>
+               </div>
+          </div>
+          <hr style="border-top: 5px solid red;">
+          <!-- End of Call to Action! -->
+
+     </div>
+     <!-- End Reviews -->
+
+     <!-- Footer -->
+     <footer class="bg-dark text-white py-5 ">
+          <div class="container">
+               <div class="footer-flex text-color">
+                    <p class="footer-item-flex">Copyright &copy; API Superstore 2020</p>
+               </div>
+               <div class="footer-flex">
+                    <p class="footer-item-flex">Jon Hetrick</p>
+                    <p class="footer-item-flex">Phone: 555-555-5555</p>
+                    <p class="footer-item-flex">USA</p>
+               </div>
+               <!-- Shareable Links -->
+               <div class=" footer-flex icon-bar">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//jonhetrick.github.io/wats3010-product-page/"
+                         class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/intent/tweet?text=https%3A//jonhetrick.github.io/wats3010-product-page/"
+                         class="twitter"><i class="fa fa-twitter"></i></a>
+               </div>
+               <!-- End Shareable Links -->
+          </div>
      </footer>
      <!-- End Footer -->
 
-
-     <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
-
-     <!-- TODO: Create an area to put the explainer video. -->
-
-
-     <!-- TODO: Create an area to put the long product description. -->
-
-     <!-- TODO: Create an area to put customer testimonials. -->
-
-     <!-- TODO: Create an area to show features. -->
-
-     <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
-
-     <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
-
-     <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
-
+     <!-- BootStrap core Javascript -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
      </script>
@@ -165,6 +285,14 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
           integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
      </script>
+     <!-- Scrollspy -->
+     <script>
+          $('body').scrollspy({
+               target: '#navbar-default',
+               offset: 50
+          })
+     </script>
+
 </body>
 
 </html>
